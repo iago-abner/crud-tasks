@@ -1,14 +1,14 @@
 {
    "type": "postgres",
-   "host": "db",
+   "host": "127.0.0.1",
    "port": 5432,
    "username": "postgres",
    "password": "postgres",
-   "database": "task",
+   "database": "db_tasks",
    "synchronize": true,
    "logging": false,
    "entities": [
-      "src/entity/**/*.ts"
+      "src/entities/**/*.ts"
    ],
    "migrations": [
       "src/migration/**/*.ts"
@@ -17,7 +17,7 @@
       "src/subscriber/**/*.ts"
    ],
    "cli": {
-      "entitiesDir": "src/entity",
+      "entitiesDir": "src/entities",
       "migrationsDir": "src/migration",
       "subscribersDir": "src/subscriber"
    }
