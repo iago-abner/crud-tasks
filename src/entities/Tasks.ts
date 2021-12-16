@@ -17,9 +17,4 @@ export class Tasks {
 
     @CreateDateColumn()
     createdAt: Date;
-
-    @Column({
-        default: false
-    })
-    finished: boolean;
 }
